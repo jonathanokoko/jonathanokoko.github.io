@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Trouve ta maison</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo2.jpg" rel="icon">
+  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet" >
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v4.6.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style class="text/css">
+    
+    .container .text{
+        position: relative;
+        color: rgb(18, 232, 240);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .container .text.first-text{
+        color: rgb(255, 255, 255);
+    }
+    .text.sec-text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #37517e;
+        border-left: 2px solid rgb(255, 255, 255);
+        animation: animate 4s steps(12) infinite;
+    }
+    @keyframes animate{
+        40%, 60%{
+            left:100%
+        }
+        100%{
+            left:0%
+        }
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"> <b>Get your house</b></a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="index.html">A propos</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Maisons</a></li>
+          <li><a class="nav-link scrollto active" href="connexion.html">connexion</a></li>
+          <li><a class="nav-link scrollto" href="inscription.html">inscription</a></li>
+          <li><a class="getstarted scrollto" href="index.html">Trouve ta maison</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+
+          <h1 class="text first-text">Nous vous aidons à trouver des maisons dans tous les quartiers et communes:
+            <span class="text sec-text"></span>
+          </h1>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Trouve ta maison</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/m6.jpg" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+          setTimeout(() => {
+              text.textContent = "Golf";
+          }, 0);
+          setTimeout(() => {
+              text.textContent = "Kamalondo";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Kenya";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Katuba";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Rwashi";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Kalubwe";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Mashipisha";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Gambella";
+          }, 4000);
+          setTimeout(() => {
+              text.textContent = "Bel air";
+          }, 8000);
+      }
+
+      textLoad();
+      setInterval(textLoad, 12000);// permet de boucler les transitions de text, au lieu de bloquer a la derniere
+  </script>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Veuillez vous connecter</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3">
+            
+          </div>
+
+           <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+              <div class="form-group">
+                <label for="name">Saisissez votre login</label>
+                <input type="text" class="form-control" name="phone" id="subject" required>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Saisissez votre password</label>
+                <input type="text" class="form-control" name="phone" id="subject" required>
+              </div>
+
+              <div class="text-center"><button type="submit">connexion</button></div>
+            </form>
+          </div> 
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+   
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Antares</span></strong>. Tout droit Reservé
+      </div>
+      <div class="credits">
+        
+        Developpé par <a href="mailto:jktoinnovation@gmail.com">Jkto-Innovation</a>
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+
+  <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function (){
+            $('.carousel').carousel()({ interval: 20 });
+        });
+    </script>
+
+</body>
+
+</html>
